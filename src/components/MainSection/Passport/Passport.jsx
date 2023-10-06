@@ -34,6 +34,8 @@ const Passport = () => {
       setSaveImgSrc(imgSrc);
       setSaveName(name);
       onClose();
+    } else if (name.length > 30) {
+      alert("Name Should be less than 30 characters.");
     }
     if (imgSrc !== null) {
       localStorage.setItem("image", imgSrc);
