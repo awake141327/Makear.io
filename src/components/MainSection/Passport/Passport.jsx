@@ -22,7 +22,6 @@ const Passport = () => {
   const [saveName, setSaveName] = useState(localName);
   const [imgSrc, setImgSrc] = useState(localImage);
   const [saveImgSrc, setSaveImgSrc] = useState(localImage);
-  console.log(localImage);
 
   const webcamRef = useRef(null);
 
