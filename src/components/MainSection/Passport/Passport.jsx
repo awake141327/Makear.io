@@ -40,7 +40,9 @@ const Passport = () => {
     if (imgSrc !== null) {
       localStorage.setItem("image", imgSrc);
     }
-    localStorage.setItem("name", name);
+    if (name.length < 30) {
+      localStorage.setItem("name", name);
+    }
   };
 
   const handleClostBtn = () => {
